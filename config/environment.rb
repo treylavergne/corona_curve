@@ -2,6 +2,6 @@ require 'httparty'
 require 'pry'
 
 
-require relative "../lib/corona_curve/api"
-require relative "../lib/corona_curve/cli"
-require relative "../lib/corona_curve/version"
+require_relative "../lib/corona_curve/api.rb"
+require_relative "../lib/corona_curve/cli.rb"
+require_relative "../lib/corona_curve/version.rb"
