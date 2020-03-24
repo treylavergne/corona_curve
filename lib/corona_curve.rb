@@ -1,6 +1,3 @@
-require "corona_curve/version"
+require relative "../config/environment"
 
-module CoronaCurve
-  class Error < StandardError; end
-  # Your code goes here...
-end
+
