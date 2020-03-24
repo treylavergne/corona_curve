@@ -1,3 +1,2 @@
-require relative "../config/environment"
-
+require_relative "../config/environment"
 
