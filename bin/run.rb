@@ -1,7 +1,6 @@
 #!/usr/local/bin/ruby
 
+require_relative "../config/environment.rb"
 
-require relative "../config/environment"
-
-CLI.
+CLI.new.start
 
