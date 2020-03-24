@@ -2,3 +2,6 @@
 
 
 require relative "../config/environment"
+
+CLI.
+
