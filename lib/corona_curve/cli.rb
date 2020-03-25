@@ -3,6 +3,8 @@ class CLI
     def start
         self.welcome
         self.intro
+        self.get_launch_dates
+        self.display_launch_dates
     end
     
     def welcome
@@ -20,9 +22,17 @@ class CLI
         puts "Let's get you on your way!"
     end
 
-    def display_launches
-        API.get_upcoming_launches
-        #puts "First things first, choose the country you'd like to launch from below:"
+    def get_launch_dates
+        API.get_launch_dates
+        
+        puts "First things first, when are you wanting to leave? Choose from one of the upcoming dates below:"
+    end
+
+    def display_launch_dates
+        API.all_launch_dates.each.with_index(1) do |date, index|
+        puts "#{index}. #{date}"
+
+        end
     end
 
     #def get_launch_location
