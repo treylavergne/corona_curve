@@ -48,7 +48,6 @@ class CLI
         puts "Choose from one of the upcoming dates below or exit :"
         puts ""
 
-
     end
 
     def get_api_data
