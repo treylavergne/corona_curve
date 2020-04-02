@@ -67,23 +67,20 @@ class CLI
         input = nil
             while input != 'exit'
                 input = gets.strip
-                
+
                 if input == "exit"
                     goodbye
                     break
-                # elsif 
-               elsif true # to validate user input
+                
+                elsif true # to validate user input
                 @launch_object = Launch.all[input.to_i - 1]
                 display_launch_object
                 puts "Would you like to see other launches or would you like to exit? Select another number or exit."
                 get_user_input
-
-
-            
+                
                 else
                     invalid_input
                 end
-           
         end
         
     end
@@ -99,8 +96,6 @@ class CLI
         puts ""
         display_launch_dates
     end
-
-
 
     def goodbye
         puts "Thanks for visiting! #swervethcurve"
