@@ -86,7 +86,6 @@ class CLI
            
         end
         
-
     end
 
     def display_launch_object
@@ -119,10 +118,7 @@ class CLI
     #     input = gets.chomp
     # end
 
-    # def user_date_input
-    #     date_input = gets.chomp
-
-    # end
+ 
 
     #def get_ship_name
      #   API.get_ship_name
