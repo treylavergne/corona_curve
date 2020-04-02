@@ -57,9 +57,7 @@ class CLI
 
     def display_launch_dates
         #API.get_launch_dates - pull these from Launch @@all instead of API
-        
         Launch.launch_dates
-
     end
 
     def get_user_input
@@ -77,7 +75,7 @@ class CLI
                 display_launch_object
                 puts "Would you like to see other launches or would you like to exit? Select another number or exit."
                 get_user_input
-                
+
                 else
                     invalid_input
                 end
