@@ -12,13 +12,29 @@ class CLI
 
     def intro
 
-        puts "3"
+        puts ""
+                                                    puts "
+                                                    █▀▀█ 
+                                                    ──▀▄ 
+                                                    █▄▄█"
+        puts ""
         sleep(0.75)
-        puts "2"
+        puts ""
+                                                    puts "
+                                                    █▀█ 
+                                                    ─▄▀ 
+                                                    █▄▄"
+        puts ""
         sleep(0.75)
-        puts "1"
-        sleep(0.75)
+        puts ""
+                                                    puts "
+                                                    ▄█─ 
+                                                    ─█─ 
+                                                    ▄█▄"
 
+        puts ""
+        sleep(0.75)
+        puts ""
         puts "
                                                   
                             █░█░█ █▀▀ █░░ █▀▀ █▀█ █▀▄▀█ █▀▀   ▀█▀ █▀█   ▀█▀ █░█ █▀▀
@@ -32,21 +48,27 @@ class CLI
         ░╚════╝░░╚════╝░╚═╝░░╚═╝░╚════╝░╚═╝░░╚══╝╚═╝░░╚═╝  ░╚════╝░░╚═════╝░╚═╝░░╚═╝░░░╚═╝░░░╚══════╝"
         
         puts ""
-        #puts "Insert spaceship text"
-        sleep(0)
+        puts ""
+        sleep(1.75)
         puts "Does COVID-19 have you worried?"
         puts ""
+        sleep(1.75)
         puts "Are you sick of being in fear?"
         puts ""
-        puts "Well then we have GREAT NEWS! Here at the Corona Curve, we're offering expedited tickets to outer space all for the low price of 1 toilet paper roll. Forget about flattening the curve - we'll avoid the curve entirely!"
-
+        sleep(2)
+        puts "Well then we have GREAT NEWS! Here at the Corona Curve,"
+        puts "we're offering expedited tickets to outer space."
+        sleep(4)
+        puts "Forget about flattening the curve - we'll avoid the curve entirely!"
+        sleep(3)
         puts "Let's get you on your way!"
-        sleep(0)
+        sleep(4)
         puts ""
         puts ""
         puts "First things first, when are you wanting to leave?" 
-        puts "Choose from one of the upcoming dates below or exit :"
+        puts "Choose from one of the upcoming dates by typing it's number below or type exit to leave the program:"
         puts ""
+        sleep(4)
 
     end
 
@@ -63,7 +85,7 @@ class CLI
     def get_user_input
         #and handle
         input = nil
-            while input != 'exit'
+            while input != 'exit' && input = 0..4
                 input = gets.strip
 
                 if input == "exit"
@@ -73,7 +95,8 @@ class CLI
                 elsif true # to validate user input
                 @launch_object = Launch.all[input.to_i - 1]
                 display_launch_object
-                puts "Would you like to see other launches or would you like to exit? Select another number or exit."
+                puts ""
+                puts "Would you like to see other launches or would you like to exit? Select another number or type exit to leave."
                 get_user_input
 
                 else
@@ -90,13 +113,16 @@ class CLI
     end
 
     def invalid_input
-        puts "Did you mean to type that? Feel free to enter one of the selections or exit if you're through."
+        puts ""
+        puts "Did you mean to type that? Feel free to type in one of the selections provided or type exit if you're done."
         puts ""
         display_launch_dates
     end
 
     def goodbye
+        puts ""
         puts "Thanks for visiting! #swervethcurve"
+        puts ""
         exit
     end
 
