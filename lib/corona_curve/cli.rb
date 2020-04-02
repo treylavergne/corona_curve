@@ -64,7 +64,6 @@ class CLI
 
     def get_user_input
         #and handle
-
         input = nil
             while input != 'exit'
                 input = gets.strip
