@@ -1,8 +1,15 @@
 # CoronaCurve
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/corona_curve`. To experiment with that code, run `bin/console` for an interactive prompt.
+This is a Ruby CLI Gem I built during my time at Flatiron School. This application accepts a user's input and returns upcoming launch missions in order to escape COVID-19.
 
-TODO: Delete this and the text above, and describe your gem
+## What I Learned
+
+* Solidified knowledge of an object creation upon instatiantion
+* Integrated external API data, iterated through it to display relevant fields, and learned how to scrape a website in the process
+* Enhanced UI by requiring the Colorize gem and formatted Terminal text with Bash commands
+* Gained deeper understanding of conditionals and how just how DRY while loops can make my code
+* Understood and appreciated the value of an in-depth flow chart the further I got into build out
+
 
 ## Installation
 
