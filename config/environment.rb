@@ -1,5 +1,6 @@
 require 'httparty'
 require 'pry'
+require 'colorize'
 
 require_relative "../lib/corona_curve/launch.rb"
 require_relative "../lib/corona_curve/api.rb"
