@@ -1,7 +1,7 @@
 class CLI
     
     def start
-        self.intro
+        # self.intro
         self.get_api_data
         self.display_launch_dates
         self.get_user_input
@@ -57,7 +57,8 @@ class CLI
         puts ""
         sleep(2)
         puts "Well then we have GREAT NEWS! Here at the Corona Curve,"
-        puts "we're offering expedited tickets to outer space."
+        puts "we want to help you out by giving you the most up-to-date info on "
+        puts "upcoming trips to outer space."
         sleep(4)
         puts "Forget about flattening the curve - we'll avoid the curve entirely!"
         sleep(3)
@@ -83,33 +84,35 @@ class CLI
     end
 
     def get_user_input
-        #and handle
+        
         input = nil
-            while input != 'exit' && input = 0..4
-                input = gets.strip
-
-                if input == "exit"
-                    goodbye
-                    break
-                
-                elsif true # to validate user input
+            while input = gets.strip
+                if input.to_i.between?(1, 5) # to validate user input
                 @launch_object = Launch.all[input.to_i - 1]
                 display_launch_object
                 puts ""
                 puts "Would you like to see other launches or would you like to exit? Select another number or type exit to leave."
                 get_user_input
 
+                elsif input == 'exit'
+                    goodbye
+                    break
                 else
                     invalid_input
                 end
-        end
+            end
+           
+                
+            
         
     end
 
     def display_launch_object
-        puts "#{@launch_object.name}"
-        puts "#{@launch_object.api_id}"
-        puts "#{@launch_object.date}"
+        puts ""
+        puts "This launch leaves #{@launch_object.date} "
+        puts "and the rocket's name is the #{@launch_object.name}."
+        puts "This id number for this launch is #{@launch_object.api_id} in case you need to reference it to your ticket holder."
+        sleep(1)
     end
 
     def invalid_input
@@ -121,7 +124,7 @@ class CLI
 
     def goodbye
         puts ""
-        puts "Thanks for visiting! #swervethcurve"
+        puts "Thanks for visiting and stay safe! #swervethcurve"
         puts ""
         exit
     end
@@ -139,17 +142,7 @@ class CLI
 
  
 
-    #def get_ship_name
-     #   API.get_ship_name
-    #end
 
-    #def get_launch_location
-    #puts "First things first, choose the country you'd like to launch from below:"
-    #end
-
-     #def choose_rocket
-    #puts "First things first, choose the location nearest to you below:"
-    #end
 
 
 
