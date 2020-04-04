@@ -15,7 +15,7 @@ class Launch
     
     def self.launch_dates
         @@all.each.with_index(1) do |object, index|
-            puts "#{index}. #{object.date}"
+            puts "#{index}. #{object.date}".green
             puts ""
         end
     end
