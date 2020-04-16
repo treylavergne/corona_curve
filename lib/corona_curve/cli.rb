@@ -4,6 +4,7 @@ class CLI
         self.intro
         self.get_api_data
         self.display_launch_dates
+        # self.name_sort_test
         self.get_user_input
     end
     
@@ -117,10 +118,16 @@ class CLI
         display_launch_dates
     end
 
+    # test
+    # def name_sort_test
+    #     Launch.sort_by_name
+    # end
+    # test
+
     def goodbye
         puts ""
         puts ""
-        puts "Thanks for visiting and stay safe! \e[1m#swervethcurve\e[0m"
+        puts "Thanks for visiting and stay safe! \e[1m#swervethecurve\e[0m"
         puts ""
         puts ""
         exit

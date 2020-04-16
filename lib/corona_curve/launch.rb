@@ -19,5 +19,9 @@ class Launch
             puts ""
         end
     end
+    
+    def self.sort_by_name
+        @@all.sort_by { |launch| puts launch.name }
+    end
 
 end
