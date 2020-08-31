@@ -2,6 +2,8 @@
 
 This is a Ruby CLI Gem I built during my time at Flatiron School. This application accepts a user's input and returns upcoming launch missions in order to escape COVID-19.
 
+Here's my video walkthrough: https://www.youtube.com/watch?v=QzJQWuLmnx0
+
 ## What I Learned
 
 * Solidified knowledge of an object creation upon instatiantion
